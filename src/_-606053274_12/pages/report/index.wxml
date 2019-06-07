@@ -1,0 +1,16 @@
+<header></header>
+<view class="report-box">
+    <view class="guge-image">
+        <image mode="widthFix" src="{{gugeimgs.front}}"></image>
+        <image mode="widthFix" src="{{gugeimgs.side}}"></image>
+    </view>
+    <view class="report-sections" wx:if="{{report[3-leveldx]&&report[3-leveldx].length>0}}" wx:for="{{levelKeys}}" wx:for-index="leveldx" wx:for-item="levelitem" wx:key="leveldx">
+        <block wx:for="{{report[3-leveldx]}}" wx:for-index="idx" wx:key="idx">
+            <view class="level-title" style="color:{{levelColors[leveldx]}}">{{levelitem}}</view>
+            <report-item bindreplychange="replyChange" itemData="{{item}}" itemName="{{item.key}}" itemReply="{{replys[item.key]}}"></report-item>
+        </block>
+    </view>
+    <cover-view class="reply-ops">
+        <cover-view bindtap="submitReply" class="reply-btn">提交反馈</cover-view>
+    </cover-view>
+</view>

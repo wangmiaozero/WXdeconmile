@@ -1,0 +1,9 @@
+.report-box {
+    padding: 28rpx;
+    background: #fafafa;
+}
+
+.title {
+    color: #333;
+    font-size: 36rpx;
+}

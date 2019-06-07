@@ -1,0 +1,76 @@
+.report {
+    padding: 28rpx;
+}
+
+.silk-head {
+    width: 100%;
+    height: 266rpx;
+    display: block;
+    margin-bottom: 24rpx;
+}
+
+.silk-con {
+    height: 68rpx;
+    line-height: 68rpx;
+}
+
+.head-left {
+    display: inline-block;
+}
+
+.head-left image {
+    width: 200rpx;
+    height: 266rpx;
+    box-shadow: 0 2rpx 4rpx 0;
+}
+
+.head-right {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    margin-left: 40rpx;
+}
+
+.text-title {
+    font-size: 36rpx;
+    color: #333;
+    height: 70rpx;
+    display: block;
+    width: 400rpx;
+    line-height: 70rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lib-title {
+    font-size: 28rpx;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 40rpx;
+    margin-top: 8rpx;
+}
+
+.nav-left {
+    font-size: 28rpx;
+    color: #666;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 40rpx;
+    display: inline-block;
+    width: 600rpx;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-right {
+    font-size: 24rpx;
+    color: #999;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 40rpx;
+    display: inline-block;
+    width: 95rpx;
+}

@@ -1,0 +1,67 @@
+.report {
+    margin: 28rpx;
+    width: 694rpx;
+    height: 558rpx;
+    background: #FFFFFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.02);
+    border-radius: 8px;
+}
+
+.con {
+    padding: 0 28rpx;
+}
+
+.title {
+    font-family: PingFangSC-Medium;
+    font-size: 34rpx;
+    color: #333333;
+    padding: 46rpx 0 40rpx 0;
+}
+
+.img image {
+    height: 250rpx;
+    width: 640rpx;
+}
+
+.text {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #666666;
+    line-height: 42rpx;
+    padding: 28rpx 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bottom {
+    height: 40rpx;
+}
+
+.bottom image {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 20rpx;
+}
+
+.name {
+    font-family: PingFangSC-Regular;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 22rpx;
+    line-height: 40rpx;
+    color: #999999;
+    text-align: justify;
+    margin-left: 16rpx;
+}
+
+.read {
+    font-family: PingFangSC-Regular;
+    vertical-align: top;
+    font-size: 22rpx;
+    line-height: 40rpx;
+    color: #999999;
+    text-align: right;
+    float: right;
+}

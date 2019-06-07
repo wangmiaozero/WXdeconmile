@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "登录",
+    "backgroundColor": "#ffffff",
+    "usingComponents": {
+        "mobile-page": "../mobile/index",
+        "nav-box": "../components/navbox/index"
+    }
+}

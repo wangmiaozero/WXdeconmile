@@ -1,0 +1,118 @@
+.kp-container {
+    position: relative;
+    padding-top: 70rpx;
+    background-color: #fff;
+    min-height: 100%;
+}
+
+.keep-login-box {
+    text-align: center;
+    padding-bottom: 40rpx;
+}
+
+.no-user-profile {
+    padding-top: 110rpx;
+    padding-bottom: 40rpx;
+}
+
+.no-user-profile .logo {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+}
+
+.no-user-profile .name {
+    font-size: 38rpx;
+    font-weight: 600;
+    margin-top: 20rpx;
+    line-height: 74rpx;
+}
+
+.operator-btns {
+    padding-top: 100rpx;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.keep-login-box .btn {
+    font-size: 36rpx;
+    line-height: 100rpx;
+    height: 100rpx;
+    background-color: #24C789;
+    color: #fff;
+    border: none;
+    border-radius: 100rpx;
+    outline: none;
+}
+
+.keep-login-box .btn-ghost {
+    background-color: #ffffff;
+    color: #24C789;
+    border: 1rpx solid #24C789;
+}
+
+.margintop30 {
+    margin-top: 30rpx;
+}
+
+.user-profile .title {
+    font-size: 38rpx;
+    font-weight: 800;
+    color: #333;
+}
+
+.user-profile .info {
+    padding-top: 100rpx;
+}
+
+.user-profile .avatar {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+}
+
+.user-profile .name {
+    padding-top: 38rpx;
+    font-size: 36rpx;
+    font-weight: 800;
+}
+
+.user-profile text {
+    vertical-align: middle;
+}
+
+.user-profile .level {
+    height: 36rpx;
+    width: 60rpx;
+    margin-left: 10rpx;
+    vertical-align: middle;
+}
+
+.user-profile .time {
+    color: #999999;
+    margin-top: 28rpx;
+    font-size: 26rpx;
+}
+
+.mobile-page-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.mobile-page-content {
+    position: relative;
+    min-height: 100%;
+}
+
+.nav-pad {
+    padding-top: 60px;
+}
+
+button::after {
+    border: none;
+}

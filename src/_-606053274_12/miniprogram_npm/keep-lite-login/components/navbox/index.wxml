@@ -1,0 +1,5 @@
+<view class="custom-nav-box">
+    <view>
+        <image catchtap="exitLogin" class="back-arrow" mode="aspectFit" src="../../assets/left-arrow.png"></image>
+    </view>
+</view>

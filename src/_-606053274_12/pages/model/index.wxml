@@ -1,0 +1,3 @@
+<view>
+    <web-view class="nav" src="{{url}} "></web-view>
+</view>

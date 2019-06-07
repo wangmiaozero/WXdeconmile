@@ -1,0 +1,20 @@
+<view class="report">
+    <navigator appId="wxc96dc7ebd9bf61e8" path="/pages/article/detail/detail?id={{itemData._id}}" target="miniProgram">
+        <view class="con">
+            <view class="title">
+        {{itemData.title}}
+      </view>
+            <view class="img">
+                <image src="{{itemData.photo}}"></image>
+            </view>
+            <view class="text">
+        {{itemData.content}}
+      </view>
+            <view class="bottom">
+                <image mode="scaleToFill" src="{{itemData.entry.author.avatar}}"></image>
+                <text class="name">{{itemData.entry.author.username}}</text>
+                <text class="read">{{itemData.entry.viewCount}} 阅读</text>
+            </view>
+        </view>
+    </navigator>
+</view>

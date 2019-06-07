@@ -1,0 +1,13 @@
+<view class="result-box">
+    <view class="paper-list">
+        <report bindtap="reportDetail" data-report-Id="{{item.reportId}}" data-share-Status="{{item.shareStatus}}" data-status="{{item.status}}" itemData="{{item}}" wx:if="{{plist.length}}" wx:for="{{plist}}" wx:for-index="idx" wx:key="idx"></report>
+        <view class="no-img" wx:if="{{plist.length==0}}">
+            <image src="../../images/empty@2x.png"></image>
+            <view class="no-text">暂无检测报告</view>
+        </view>
+    </view>
+    <view class="loading-box" wx:if="{{isLoading}}">
+        <image src="/images/loading_64.gif"></image>
+        <view>正在加载报告</view>
+    </view>
+</view>

@@ -1,0 +1,210 @@
+.canmera-container {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.photo-btn {
+    position: fixed;
+    bottom: 64rpx;
+    font-size: 40rpx;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.fullcover {
+    width: 100%;
+    height: 100%;
+}
+
+.camera-self {
+    position: relative;
+    margin: 0 auto;
+}
+
+.photo-btn cover-image {
+    display: inline-block;
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.pose-tip {
+    position: absolute;
+    z-index: 4;
+    bottom: 20rpx;
+    left: 20rpx;
+    width: 220rpx;
+    height: 344rpx;
+    border-radius: 10rpx;
+    font-size: 24rpx;
+    background-color: rgba(0,0,0,0.50);
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pose-sketch {
+    height: 100%;
+    width: 376rpx;
+    margin: 0 auto;
+    padding: 25rpx 0 38rpx;
+    opacity: .3;
+}
+
+.pose-bg {
+    padding: 20rpx 20rpx 14rpx;
+    box-sizing: border-box;
+    width: 220rpx;
+    height: 275rpx;
+}
+
+.pose-bg-img {
+    background: #ffffff;
+    border-radius: 4rpx;
+}
+
+.pose-tip .text-tip {
+    display: block;
+    width: 100%;
+    font-size: 20rpx;
+    line-height: 28rpx;
+    font-family: PingFangSC-Regular;
+    word-wrap: break-word;
+}
+
+.camera-content {
+    position: absolute;
+    top: 60rpx;
+    left: 30rpx;
+    padding-right: 30rpx;
+    z-index: 4;
+}
+
+.camera-content .close {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.camera-content .h1 {
+    font-size: 56rpx;
+    padding-top: 20rpx;
+    padding-left: 60rpx;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.camera-content .h2 {
+    padding-left: 60rpx;
+    font-size: 26rpx;
+    color: #ffffff;
+    margin-top: 20rpx;
+    font-weight: 300;
+}
+
+.camera-box {
+    position: relative;
+    margin-top: 300rpx;
+    margin-left: 80rpx;
+    margin-right: 80rpx;
+}
+
+.rgba-bg {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.box-shadow {
+    box-shadow: 0 0 0 1200px rgba(0,0,0,0.5);
+}
+
+.camera-box .border {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.camera-box .guangbiao,.camera-box .zhunxin {
+    position: absolute;
+    width: 160rpx;
+    height: 160rpx;
+}
+
+.camera-box .guangbiao {
+    z-index: 1;
+}
+
+.camera-box .zhunxin {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.camera-btn {
+    width: 134rpx;
+    height: 134rpx;
+    box-sizing: border-box;
+    border: solid #ffffff 10rpx;
+    border-radius: 50%;
+    background: #57c786;
+    margin: 36rpx auto 0;
+    opacity: .5;
+}
+
+.photo-bottom {
+    position: relative;
+    font-size: 40rpx;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+.photo-btn {
+    position: absolute;
+    display: inline-block;
+    width: 134rpx;
+    height: 134rpx;
+    border-radius: 50%;
+    border: 10rpx solid #fff;
+    background-color: #57c786;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 6;
+}
+
+.pose-warn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -205rpx;
+    height: 310rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.pose-warn-img {
+    width: 220rpx;
+    height: 220rpx;
+    margin: 0 auto;
+}
+
+.pose-warn-desc {
+    margin-top: 10rpx;
+    padding: 15rpx 29rpx;
+    background-color: rgba(0,0,0,0.70);
+    border-radius: 8rpx;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 28rpx;
+}
+
+.camera {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}

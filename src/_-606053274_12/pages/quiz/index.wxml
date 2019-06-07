@@ -1,0 +1,28 @@
+<view class="quiz-contrainer">
+    <view class="quiz-title">
+        <text>你是男生还是女生？</text>
+    </view>
+    <picker bindchange="bindPickerChange" class="quiz-picker" data-type="genderIndex" range="{{genderList}}" value="{{genderIndex}}">
+        <view class="picker-value">{{genderList[genderIndex]}}</view>
+    </picker>
+    <view class="quiz-title">
+        <text>你的年龄？</text>
+    </view>
+    <picker bindchange="bindPickerChange" class="quiz-picker" data-type="ageIndex" range="{{ageList}}" value="{{ageIndex}}">
+        <view class="picker-value">{{ageList[ageIndex]}} 岁</view>
+    </picker>
+    <view class="quiz-title">
+        <text>你的身高？</text>
+    </view>
+    <picker bindchange="bindPickerChange" class="quiz-picker" data-type="heightIndex" range="{{heightList}}" value="{{heightIndex}}">
+        <view class="picker-value">{{heightList[heightIndex]}} cm</view>
+    </picker>
+    <view class="quiz-title">
+        <text>你目前的体重？</text>
+    </view>
+    <picker bindchange="bindPickerChange" class="quiz-picker" data-type="weightIndex" range="{{weightList}}" value="{{weightIndex}}">
+        <view class="picker-value">{{weightList[weightIndex]}} kg</view>
+    </picker>
+    <button class="btn next-btn" disabled="true" wx:if="{{!genderIndex&&genderIndex!=0||!ageIndex&&ageIndex!=0||!heightIndex&&heightIndex!=0||!weightIndex&&weightIndex!=0}}">下一步</button>
+    <button bindtap="gotoCamera" class="btn next-btn" wx:else>下一步</button>
+</view>

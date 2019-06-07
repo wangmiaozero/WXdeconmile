@@ -1,0 +1,21 @@
+{
+    "name": "keep-physical",
+    "version": "1.0.0",
+    "description": "Keep体态体脂评估小程序",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@phab.gotokeep.com/diffusion/488/infra-keep-lite.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "keep-lite-login": "^1.0.21",
+        "keep-wechatapp-common-header": "^1.0.0",
+        "keep-wechatapp-sensorsdata": "^1.0.0"
+    },
+    "devDependencies": {}
+}

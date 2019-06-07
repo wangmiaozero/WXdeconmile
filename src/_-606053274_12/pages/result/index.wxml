@@ -1,0 +1,13 @@
+<view class="result-container">
+    <view class="content">
+        <image class="prephoto" mode="aspectFill" src="{{photo}}"></image>
+    </view>
+    <view class="op-btns">
+        <button bindtap="rephoto" class="btn blank">重新拍摄</button>
+        <button bindtap="next" class="btn green">{{nextText}}</button>
+    </view>
+    <view class="loading-box" wx:if="{{isLoading}}">
+        <image src="/images/loading_white.gif"></image>
+        <view>正在生成报告</view>
+    </view>
+</view>

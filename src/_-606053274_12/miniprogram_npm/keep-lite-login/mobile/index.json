@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "privacy-page": "../rules/privacy",
+        "protect-page": "../rules/protect"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "解决方案",
+    "usingComponents": {
+        "header": "../../components/header/index",
+        "report-item": "../../components/report-item/index",
+        "silkbag": "../../components/silkbag/index",
+        "courses": "../../components/courses/courses",
+        "experience": "../../components/experience/index",
+        "keep-login": "/miniprogram_npm/keep-lite-login/index"
+    }
+}

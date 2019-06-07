@@ -1,0 +1,8 @@
+<view style="height: 100%" wx:if="{{initShowLock}}">
+    <view style="height: 100%" wx:if="{{!userInfo.userId&&!userInfo.unionId}}">
+        <button bindgetuserinfo="onGotUserInfo" class="login-btn-class" lang="zh_CN" openType="getUserInfo" style="{{loginBtnStyle}}">{{loginBtnText}}</button>
+    </view>
+    <view style="height: 100%" wx:if="{{userInfo.unionId}}">
+        <button catchtap="storageUserInfo" class="login-btn-class" openType="navigate" style="{{loginBtnStyle}}">{{loginBtnText}}</button>
+    </view>
+</view>

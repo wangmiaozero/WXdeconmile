@@ -1,0 +1,138 @@
+.report-box {
+    padding: 28rpx 80rpx 0 80rpx;
+    height: 100%;
+}
+
+.infos {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.info-item {
+    margin-top: 30rpx;
+    border-bottom: 1rpx solid #e2e2e2;
+}
+
+.title {
+    color: #999999;
+}
+
+.report-sections {
+    padding-left: 28rpx;
+    padding-right: 28rpx;
+    background-color: #ffffff;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    margin-bottom: 30rpx;
+}
+
+.reply-ops {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40rpx;
+}
+
+.reply-btn {
+    font-size: 36rpx;
+    color: #FFFFFF;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 100rpx;
+    background-color: #24C789;
+}
+
+.guge-image {
+    text-align: center;
+}
+
+.guge-image image {
+    display: inline-block;
+    width: 100%;
+    height: 788rpx;
+}
+
+.dengrous {
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #ffffff;
+    text-align: center;
+    line-height: 54rpx;
+    position: absolute;
+}
+
+.high {
+    position: absolute;
+    color: #ffffff;
+    width: 180rpx;
+    height: 54rpx;
+    bottom: 196rpx;
+    left: -7rpx;
+    background-color: #FF5363;
+    border-radius: 8rpx;
+    text-align: left;
+    padding-left: 20rpx;
+}
+
+.mid {
+    position: absolute;
+    width: 180rpx;
+    height: 54rpx;
+    bottom: 116rpx;
+    left: -7rpx;
+    background-color: #FF8F0E;
+    border-radius: 8rpx;
+    text-align: left;
+    padding-left: 20rpx;
+}
+
+.normal {
+    position: absolute;
+    width: 180rpx;
+    height: 54rpx;
+    bottom: 36rpx;
+    left: -7rpx;
+    background-color: #24C789;
+    border-radius: 8rpx;
+    text-align: left;
+    padding-left: 20rpx;
+}
+
+.file-text {
+    font-family: PingFangSC-Regular;
+    font-size: 26rpx;
+    color: #666666;
+    text-align: center;
+    line-height: 40rpx;
+    margin-top: 122rpx;
+}
+
+.btn {
+    width: 566rpx;
+    height: 100rpx;
+    background: #24C789;
+    border-radius: 100rpx;
+    line-height: 100rpx;
+    font-size: 36rpx;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+    margin-top: 34rpx;
+}
+
+.bottom {
+    margin-top: 48rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 24rpx;
+    color: #666666;
+    text-align: center;
+}
+
+checkbox .wx-checkbox-input {
+    width: 30rpx;
+    height: 30rpx;
+}

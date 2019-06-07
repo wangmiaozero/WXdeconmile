@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "",
+    "usingComponents": {
+        "keep-login": "/miniprogram_npm/keep-lite-login/index"
+    }
+}

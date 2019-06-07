@@ -1,0 +1,9 @@
+var handleImgUrl = (function(url) {
+    var reg = getRegExp('http:', 'g');
+    if (url) {
+        return (url.replace(reg, 'https:'))
+    }
+});
+module.exports = ({
+    handleImgUrl: handleImgUrl,
+});

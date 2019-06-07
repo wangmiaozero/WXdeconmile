@@ -1,0 +1,16 @@
+<view class="report-box">
+    <view class="bind-image">
+        <image src="https://static1.keepcdn.com/2019/01/04/15/1546585349679_612x500.png"></image>
+    </view>
+    <view class="file-text">
+        <view>绑定 Keep，将你的检测数据同步到个人账号，可以进一步记录身体数据的变化哦！</view>
+    </view>
+    <view>
+        <button bindtap="shareFile" class="btn">绑定</button>
+    </view>
+    <view class="bottom">
+        <navigator bindtap="shareNo" hoverClass="navigator-hover">
+            <text style="border-bottom:1px solid #ccc">暂不绑定直接查看</text>
+        </navigator>
+    </view>
+</view>

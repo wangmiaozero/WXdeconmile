@@ -1,0 +1,25 @@
+<view class="canmera-container" id="camera-screen">
+    <camera binderror="cameraError" class="camera-self" devicePosition="back" flash="auto" mode="normal" style="width: 100%; height: {{cameraHeight}}px;" wx:if="{{cameraHeight>0}}">
+        <cover-view class="fullcover">
+            <cover-view class="pose-sketch" style="width: {{sketchWidth}}rpx">
+                <cover-image src="{{sketchImage}}" style="width: {{sketchWidth}}rpx"></cover-image>
+            </cover-view>
+            <cover-view class="pose-tip">
+                <cover-view class="pose-bg">
+                    <cover-image class="pose-bg-img" src="/images/{{contrast==0?'zhengdui':'cedui'}}.jpg"></cover-image>
+                </cover-view>
+                <cover-view class="text-tip">请自然站立且勿穿</cover-view>
+                <cover-view class="text-tip">过于宽松的衣服</cover-view>
+            </cover-view>
+            <cover-view class="pose-warn" wx:if="{{!rightDerection&&poseWarn.img}}">
+                <cover-image class="pose-warn-img" src="{{poseWarn.img}}"></cover-image>
+                <cover-view class="pose-warn-desc">
+                    <cover-view>{{poseWarn.desc}}</cover-view>
+                </cover-view>
+            </cover-view>
+        </cover-view>
+    </camera>
+    <view class="photo-bottom" style="width: 100%; height:{{btnHeight}}px;" wx:if="{{cameraHeight>0}}">
+        <view bindtap="cameraBind" class="photo-btn " src="/images/paishe@3x.png" style="opacity: {{rightDerection?'1':'.5'}};"></view>
+    </view>
+</view>

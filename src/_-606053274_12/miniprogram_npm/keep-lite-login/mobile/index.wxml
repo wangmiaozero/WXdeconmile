@@ -1,0 +1,50 @@
+<view class="login-form">
+    <view class="logo-box" hidden="{{!logoShow}}">
+        <image class="logo" mode="aspectFit" src="../assets/keep-logo@2x.png"></image>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="section">
+            <view>
+                <picker bindchange="bindPickerChange" range="{{countryArray}}" value="{{countryIndex}}">
+                    <text>{{countryCodes[countryIndex]}}</text>
+                    <image class="triangle" mode="aspectFit" src="../assets/triangle@2x.png"></image>
+                </picker>
+            </view>
+            <view class="flex-main">
+                <input bindfocus="logoHide" bindinput="inputMobile" maxlength="30" placeholder="输入手机号" type="number" value="{{mobile}}"></input>
+            </view>
+        </view>
+        <view class="section">
+            <view class="flex-main">
+                <input bindfocus="logoHide" bindinput="inputChaCode" maxlength="4" placeholder="输入 4 位验证码" type="number"></input>
+            </view>
+            <view class="">
+                <button catchtap="getVerifyCode" class="btn btn-ghost {{sendBtnLock}}" type="default"> {{sendBtnText}} </button>
+            </view>
+        </view>
+        <view class="btn-area">
+            <button class="btn {{submitBtnLock}}" formType="submit">登录</button>
+        </view>
+    </form>
+</view>
+<view class="footer">
+    <view>没有账号？验证后会自动注册</view>
+    <view class="line-box">
+        <text>注册即代表同意 Keep </text>
+        <view catchtap="onProtectShow" class="link">用户协议</view>
+        <text>和</text>
+        <view catchtap="onPrivacyShow" class="link">隐私政策</view>
+    </view>
+</view>
+<view class="rules-box" wx:if="{{privacyShow||protectShow}}">
+    <image catchtap="onCloseRules" class="close {{showNav?'nav-margin':''}}" mode="aspectFit" src="../assets/close_black@2x.png"></image>
+    <view class="rule-content">
+        <privacy-page wx:if="{{privacyShow}}"></privacy-page>
+        <protect-page wx:if="{{protectShow}}"></protect-page>
+    </view>
+</view>
+<view class="error-tip" hidden="{{!toastError.show}}">
+    <div class="toast-inner">
+        <div class="toast-text">{{toastError.title}}</div>
+    </div>
+</view>

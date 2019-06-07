@@ -1,0 +1,25 @@
+<view class="home-contrainer">
+    <image class="add-bg" mode="aspectFit" src="{{images.index_pic}}"></image>
+    <view class="desc">
+        <text decode="{{true}}">&nbsp;无需昂贵仪器，仅需拍摄正面、侧面两张全身照，通过 KeepAI 算法，即可检测出各种维度、体脂率以及体态问题</text>
+    </view>
+    <view class="bottom">
+        <image bindtap="checkChange" class="check" mode="aspectFit" src="/images/{{checkValue?'Icon_Check_selected@2x':'Icon_Check_unselected@2x'}}.png"></image>
+    已阅读并同意Keep
+    <navigator hoverClass="navigator-hover" style="display:inline-block" url="/miniprogram_npm/keep-lite-login/rules/protect">
+            <text style="border-bottom:1px solid #24C789;color:#24C789">用户协议</text>
+        </navigator>
+    </view>
+    <view>
+        <view class="btnbox">
+            <view wx:if="{{userinfo.openid&&userinfo.unionId}}">
+                <button bindopensetting="onOpenSetting" bindtap="onTapSetting" class="moreBtn" disabled="{{!checkValue||btnLock}}" openType="openSetting" wx:if="{{failed}}">开始评估</button>
+                <button bindtap="gotoQuiz" class="moreBtn" disabled="{{!checkValue||btnLock}}" wx:else>开始评估</button>
+            </view>
+            <button bindgetuserinfo="onGotUserInfo" class="moreBtn" disabled="{{!checkValue}}" openType="getUserInfo" wx:if="{{userinfo.openid&&!userinfo.unionId}}">开始评估</button>
+            <button class="moreBtn" disabled="{{!checkValue}}" wx:if="{{!userinfo.openid&&!userinfo.unionId}}">开始评估</button>
+        </view>
+        <button class="shareBtn" data-share-Type="homeShare" openType="share">推荐给好友</button>
+    </view>
+    <keep-login bindkeeploginstarted="onLoginstarted" entryPageUrl="miniprogram_npm/keep-lite-login/entry/index" loginBtnClass="keeplogin" style="display:none" wx:if="{{!userinfo.openid&&!userinfo.unionId}}"></keep-login>
+</view>

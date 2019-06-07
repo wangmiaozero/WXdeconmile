@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "Keep体态体脂评估",
+    "usingComponents": {
+        "keep-login": "../../miniprogram_npm/keep-lite-login/index"
+    }
+}
