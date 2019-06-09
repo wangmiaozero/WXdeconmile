@@ -1,3 +1,0 @@
-<view class="report-box">
-    <web-view class="nav" src="{{url}} " wx:if="{{visible}}"></web-view>
-</view>

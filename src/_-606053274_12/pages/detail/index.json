@@ -1,9 +1,0 @@
-{
-    "navigationBarTitleText": "体态体脂报告",
-    "usingComponents": {
-        "header": "../../components/header/index",
-        "report-item": "../../components/report-item/index",
-        "confirm": "../../components/confirm-pop/confirm-pop",
-        "keep-login": "/miniprogram_npm/keep-lite-login/index"
-    }
-}

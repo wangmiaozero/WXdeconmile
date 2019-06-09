@@ -1,6 +1,0 @@
-{
-    "usingComponents": {
-        "report": "../../components/report/index",
-        "keep-login": "../../miniprogram_npm/keep-lite-login/index"
-    }
-}

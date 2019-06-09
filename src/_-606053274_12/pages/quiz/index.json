@@ -1,6 +1,0 @@
-{
-    "navigationBarTitleText": "1/3 身体数据",
-    "usingComponents": {
-        "keep-login": "/miniprogram_npm/keep-lite-login/index"
-    }
-}

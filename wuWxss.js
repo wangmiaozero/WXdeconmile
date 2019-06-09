@@ -117,8 +117,20 @@ function doWxss(dir,cb){
 			});
 		}
 	}
-	function runOnce(){
+/* 	function runOnce(){
 		for(let name in runList)runVM(name,runList[name]);
+  } */
+  function runOnce() {
+		for (let name in runList) {
+			// console.log(name, runList[name]);
+			var start = `var window = window || {}; var __pageFrameStartTime__ = Date.now(); 	var __webviewId__; 	var __wxAppCode__={}; 	var __mainPageFrameReady__ = function(){}; 	var __WXML_GLOBAL__={entrys:{},defines:{},modules:{},ops:[],wxs_nf_init:undefined,total_ops:0}; 	var __vd_version_info__=__vd_version_info__||{};	 
+			
+			$gwx=function(path,global){
+				if(typeof global === 'undefined') global={};if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
+				}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
+			}`;
+			runVM(name, start + " \r\n" + runList[name]);
+		}
 	}
 	function transformCss(style){
 		let ast=csstree.parse(style);
